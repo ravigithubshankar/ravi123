@@ -26,8 +26,7 @@ jobs:
         pip install seqeval
         pip install git+https://github.com/huggingface/transformers.git
         pip install wandb
-      
-        pip intall evaluate
+        pip install evaluate
 
     - name: Train Model
       run: python train_model_pii.py  # replace with your actual script name

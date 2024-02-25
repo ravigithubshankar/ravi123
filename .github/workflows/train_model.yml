@@ -32,3 +32,5 @@ jobs:
       run: python train_model_pii.py  # replace with your actual script name
       env:
         WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
+        TRAIN_JSON_PATH: ${{ github.workspace }}/data/train.json
+        

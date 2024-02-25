@@ -14,8 +14,9 @@ from datasets import Dataset,features
 import numpy as np
 import os 
 
-data_path = os.environ.get("TRAIN_JSON_PATH", "data/train.json")
+data_path = os.path.join(os.environ.get("GITHUB_WORKSPACE", ""), "data", "train.json")
 data = json.load(open(data_path))
+
 
 all_labels = sorted(list(set(chain(*[x["labels"] for x in data]))))
 label2id = {l: i for i,l in enumerate(all_labels)}

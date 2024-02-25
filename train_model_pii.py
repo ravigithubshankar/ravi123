@@ -1,4 +1,4 @@
-!pip install seqeval evaluate -q
+
 
 import json
 import argparse

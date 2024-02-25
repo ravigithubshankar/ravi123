@@ -185,7 +185,7 @@ trainer=Trainer(
     tokenizer=tokenizer,
     compute_metrics=partial(compute_metrics,all_labels=all_labels))
 
-%%time
+
 trainer.train()
 
 for epoch in range(args.num_train_epoch):

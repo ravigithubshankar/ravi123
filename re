@@ -1,0 +1,5 @@
+torch==1.10.0
+transformers==4.13.0
+datasets==1.17.1
+seqeval==1.2.13
+wandb==0.12.5

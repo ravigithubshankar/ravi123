@@ -18,6 +18,9 @@ jobs:
       with:
         python-version: 3.8
 
+    - name: Display Repository Contents
+      run: ls -R ${{ github.workspace }}/data
+
     - name: Install Dependencies
       run: |
         pip install torch

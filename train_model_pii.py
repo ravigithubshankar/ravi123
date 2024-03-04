@@ -13,10 +13,10 @@ import evaluate
 from datasets import Dataset,features
 import numpy as np
 import os 
-import data *
 
-#data_path = os.path.join(os.environ.get("GITHUB_WORKSPACE", ""), "data", "train.json")
-#data = json.load(open(data_path))
+
+data_path = os.path.join(os.environ.get("GITHUB_WORKSPACE", ""), "data", "train.json")
+data = json.load(open(data_path))
 
 
 

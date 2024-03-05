@@ -20,5 +20,17 @@ jobs:
         run: |
           python train_model_pii.py
 
+
+      - name: Install Dependices
+        run: |
+         
+          pip install torch
+          pip install transformers
+          pip install datasets
+          pip install seqeval
+          pip install git+https://github.com/huggingface/transformers.git
+          pip install wandb
+          pip install evaluate
+
         env:
           GITHUB_WORKSPACE: ${{github.workspace }}
